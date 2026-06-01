@@ -27,5 +27,3 @@ jobs:
           echo '${{ secrets.FIREBASE_SERVICE_ACCOUNT }}' > gcp-key.json
           export GOOGLE_APPLICATION_CREDENTIALS=gcp-key.json
           npx firebase-tools deploy --only hosting --project gen-lang-client-0844723798
-        env:
-          FIREBASE_TOKEN: "" # Clears out the old token so it forces the master key use
