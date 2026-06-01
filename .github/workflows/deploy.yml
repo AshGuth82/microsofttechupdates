@@ -2,7 +2,7 @@ name: Live Hub Deployment
 on:
   push:
     branches:
-      - main  # Triggers the automated build whenever you save to the main branch
+      - main
 
 jobs:
   deploy:
@@ -26,14 +26,6 @@ jobs:
         uses: FirebaseExtended/action-hosting-deploy@v0
         with:
           repoToken: "${{ secrets.GITHUB_TOKEN }}"
-          firebaseServiceAccount: "${{ secrets.FIREBASE_TOKEN }}"
-          projectId: "gen-lang-client-0844723798"
-          channelId: live
-          
-- name: Deploy Live to Firebase Routing
-        uses: FirebaseExtended/action-hosting-deploy@v0
-        with:
-          repoToken: "${{ secrets.FIREBASE_TOKEN }}"
           firebaseServiceAccount: "PASTE_YOUR_ACTUAL_FIREBASE_TOKEN_HERE"
           projectId: "gen-lang-client-0844723798"
           channelId: live
