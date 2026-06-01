@@ -23,4 +23,4 @@ jobs:
         run: npm run build
 
       - name: Push Build Live to Firebase Hosting
-        run: npx firebase-tools deploy --token "${{ secrets.FIREBASE_TOKEN }}" --only hosting --project gen-lang-client-0844723798
+        run: npx firebase-tools deploy --token "${{ secrets.FIREBASE_TOKEN }}" --only hosting --site gen-lang-client-0844723798 --project gen-lang-client-0844723798
