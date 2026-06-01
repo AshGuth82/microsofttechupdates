@@ -14,10 +14,10 @@ jobs:
       - name: Setup Node.js Environment
         uses: actions/setup-node@v4
         with:
-          node-version: 20
+          node-version: 24
 
       - name: Install Project Dependencies
-        run: npm ci
+        run: npm install
 
       - name: Compile Full-Stack Distribution
         run: npm run build
