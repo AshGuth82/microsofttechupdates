@@ -26,19 +26,6 @@ jobs:
         uses: FirebaseExtended/action-hosting-deploy@v0
         with:
           repoToken: "${{ secrets.GITHUB_TOKEN }}"
+          firebaseServiceAccount: "${{ secrets.FIREBASE_SERVICE_ACCOUNT }}"
           projectId: "gen-lang-client-0844723798"
           channelId: live
-          firebaseServiceAccount: |
-            {
-              "type": "service_account",
-              "project_id": "gen-lang-client-0844723798",
-              "private_key_id": "a0538db094d80e05581a59e20fc782ffdf714b35",
-              "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvwIBADANBgkqhkiG9w0BAQEFAASCBKkwggSlAgEAAoIBAQC8PB65k/M5T3S4\n0+5B8e80PcOeOlY+x3oWz8WgGC95ImuTb96kXs+5h3CAZ0LqlfPivakwPYbp+Tia\nZf9ZxMxhFT152J2tq/RjRfsFWVZh5KwSF7/fIhDmOcM3N/MiHAIILgbxu/+Qsbt6\nw3LxDR5+vOeeUjzzXqLfh3i8huWALtQTPD1j7OfSa0tIYhvzRh+pVuKXFoSnr23Z\ncDLfr8+fscLCf5IAKiwsWmCE+XYJj5TMzENrhVYkUMcPWrGXecRjajw6RzrITb8T\nmOTGfXkquwpqaZdy8LHW0e+O9UN/xwI8oYTmqiKwlMrSjew0zTAVg4VuXewhmCJm\nwhSHOVf5AgMBAAECggEAKVYqiSZsa1F/mHcyA1lV5msJ4l19QxwbO5c1Fws4oall\nZmNSyVXo2B1eH1SN5WY4wLpVxTo9vnP0cjOj99q35zn63h8rwU/Zw1NC5NHRnn3R\nK8f7YszgWS6mKCIpSnxMFe/FpqBaZzQgr7zsKPNwlvR1CNeWevt1WREu+nfFPnip\nOWGIJ/9b3wwgsxZWqrkFyLHV0pQtopGDfGizxMc6kI4Iu89dRaf03pSsu3ETyFWi\nMMo1oVKKnIau5ESSMnch7i5SiZNy+yOHHs3cTm/fgAL6FuoQZ2sH8a586h+Tj9Oh\nIC0ennnx7XTKN8G/B5nen+YaU5mspBjiGxnaPRYVYQKBgQDzqceCSMVpM3HyoOGW\nEMEtNs1rxcBXbcY7a6wSKwHYd2tF1SfSOUjyQwgt8K74q3w4EvB0zrRAUzB+wubA\nP6IRZKzsY9H60+dOJQvP/lH3mCcp2FSKBn2bdDZIbypjK+NrlYKrtG0bEbwJXJWX\nVc7mrYYlNKuDxYBjd3+puWYqpwKBgQDFw+kbIdnfIS4AlXJnadp2C6jwaCPwxT0w\neTfQxvusc/gOnF8hKfiEybPmTb+eElieNm+vq5zu18qOZpMiT9mc/HVLbZ4myt/t\nHo9x6a2/njPJV4XEZY7Y+DHOPwTVhf5S/fSbOzF/BZxs/ssZ7zMcsTDZb47T+qkR\nQZTbYhjcXwKBgQDmduhYh0IJLfqR9a9JBBHjFRmY3RL+3rqHi2DWUk1NlC4nf+RJ\nR5uCYPqEkUi9tV0poGhE4xnEWardyrT8k3NUJjgU4plCOFloJUwV78NRf11Ti+Ty\nJA98EKAjRNn/sQxKvsA4bdBgsRZ8eFCZMjUfJHNkD3xGh3DXI7jhLJXAswKBgQCj\ndgfBplwnwov8bYovEd5A/eg4NUunoc+utjK9PQsegohAw10Z01AXqYQp0o+UPwPC\nWao84DMJc5F33C63CJsM19q3arZyx/MIUd8sv4IeRMv3GoF1UKAelB7Oo2YCews4\nW7IHcIi7vc6KhJspJ33utEJ1JnE+owuFONip8E4uLwKBgQCyrDr2P2DfU8dqu3S8\nPxDk0HSVQRqRxrv2dybvjSaVLSNKA8R161Xj/DqdC/hzXRujpRTcXdcJCvrtwrJD\ng/vGwaK0D8S2uTsTPMGpuCUfQS4MUVHxngmyfDIOFxAmlOUWRksjilUfwQQC7p4d\nqtAQ0LN4FRMcKZzRMWNawjWiPg==\n-----END PRIVATE KEY-----\n",
-              "client_email": "firebase-adminsdk-fbsvc@gen-lang-client-0844723798.iam.gserviceaccount.com",
-              "client_id": "110342499027013167922",
-              "auth_uri": "https://accounts.google.com/o/oauth2/auth",
-              "token_uri": "https://oauth2.googleapis.com/token",
-              "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
-              "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/firebase-adminsdk-fbsvc%40gen-lang-client-0844723798.iam.gserviceaccount.com",
-              "universe_domain": "googleapis.com"
-            }
