@@ -22,5 +22,8 @@ jobs:
       - name: Compile Full-Stack Distribution
         run: npm run build
 
-      - name: Push Build Live to Firebase Hosting
-        run: npx firebase-tools deploy --token "${{ secrets.FIREBASE_TOKEN }}" --only hosting
+      - name: Authenticate via Google Application Credentials
+        run: |
+          echo '${{ secrets.FIREBASE_SERVICE_ACCOUNT }}' > gcp-key.json
+          export GOOGLE_APPLICATION_CREDENTIALS=gcp-key.json
+          npx firebase-tools deploy --only hosting --project gen-lang-client-0844723798
