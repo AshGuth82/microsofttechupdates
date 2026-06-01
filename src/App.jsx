@@ -123,6 +123,9 @@ export default function App() {
                   </div>
                 </article>
               ))}
-          </div>
+         </div>
         </div>
       </main>
+    </div>
+  );
+}
