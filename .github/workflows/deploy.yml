@@ -29,3 +29,10 @@ jobs:
           firebaseServiceAccount: "${{ secrets.FIREBASE_TOKEN }}"
           projectId: "gen-lang-client-0844723798"
           channelId: live
+- name: Deploy Live to Firebase Routing
+        uses: FirebaseExtended/action-hosting-deploy@v0
+        with:
+          repoToken: "${{ secrets.GITHUB_TOKEN }}"
+          firebaseServiceAccount: "PASTE_YOUR_ACTUAL_FIREBASE_TOKEN_HERE"
+          projectId: "gen-lang-client-0844723798"
+          channelId: live
