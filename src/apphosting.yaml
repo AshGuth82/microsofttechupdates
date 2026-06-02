@@ -1,0 +1,4 @@
+# Tells Firebase App Hosting how to deploy your Vite/React site
+frontend:
+  buildCommand: npm run build
+  outputDirectory: dist
