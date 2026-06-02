@@ -1,5 +1,0 @@
-manifestVersion: v1
-runConfig:
-  environmentVariables:
-    - key: GEMINI_API_KEY
-      value: "YOUR_API_KEY_HERE" # You can add your actual key here later if needed
