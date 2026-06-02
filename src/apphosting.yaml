@@ -1,6 +1,5 @@
-# Settings for Firebase App Hosting
 manifestVersion: v1
 runConfig:
-  concurrency: 80
-  cpu: 1
-  memoryMiB: 512
+  environmentVariables:
+    - key: GEMINI_API_KEY
+      value: "YOUR_API_KEY_HERE" # You can add your actual key here later if needed
